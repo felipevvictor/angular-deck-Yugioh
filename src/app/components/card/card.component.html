@@ -1,0 +1,18 @@
+<div class="header">
+    <input [(ngModel)]="nomeCarta" placeholder="Nome da Carta" type="text">
+    <button (click)="buscarCarta()">Pesquisar</button>
+</div><br>
+<div class="card">
+    <div class="card__title">
+        <h3>{{carta.data[0].name}}</h3>
+    </div>
+    <div class="card__stats">
+        <span class="card__stats__type">{{[carta.data[0].type]}}</span>
+    </div>
+    <div class="card__body">
+        <img [src]="carta.data[0].card_images[0].image_url_cropped" alt="yugioh">
+    </div>
+    <div class="card__description">
+       <p>{{carta.data[0].desc}}</p>
+    </div>
+</div>

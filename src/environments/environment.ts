@@ -3,7 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  yugiAPI: 'https://db.ygoprodeck.com/api/v7/cardinfo.php?name='
 };
 
 /*
